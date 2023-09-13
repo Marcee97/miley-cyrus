@@ -71,5 +71,14 @@ function moverIzquierda() {
   contenidoCarrousel.style.transform = `translateX(-${counter * widthImg}%)`;
 }
 
+function scrollAutoShop(){
+  let scroll = window.scrollY;
+  if(scroll == 1100){
+    setInterval(moverDerecha,4000)
+    console.log(scroll)
+  }
+}
+window.addEventListener('scroll',scrollAutoShop)
+
 botonIzquierda.addEventListener("click", moverIzquierda);
 botonDerecha.addEventListener("click", moverDerecha);

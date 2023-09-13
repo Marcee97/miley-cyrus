@@ -53,6 +53,21 @@ header .proximo-evento-portada {
   align-items: end;
   justify-content: end;
 }
+@media (max-width: 1506px) {
+  header .proximo-evento-portada {
+    width: 45%;
+  }
+}
+@media (max-width: 956px) {
+  header .proximo-evento-portada {
+    width: 55%;
+  }
+}
+@media (max-width: 780px) {
+  header .proximo-evento-portada {
+    width: 65%;
+  }
+}
 header .cuadro-unplugged {
   background-color: #000000;
   width: 500px;
@@ -64,6 +79,11 @@ header .cuadro-unplugged {
   font-size: 1.7em;
   position: absolute;
   padding: 1.3em;
+}
+@media (max-width: 948px) {
+  header .cuadro-unplugged {
+    font-size: 1.5em;
+  }
 }
 header .cuadro-unplugged img {
   object-fit: contain;
@@ -92,8 +112,19 @@ header .cuadro-unplugged button {
   border: none;
   background-color: #ffffff;
 }
+@media (max-width: 1156px) {
+  header .cuadro-unplugged button {
+    font-size: 85%;
+  }
+}
 header .cuadro-unplugged img {
   height: 150px;
+}
+@media (max-width: 1156px) {
+  header .cuadro-unplugged {
+    width: 430px;
+    height: 430px;
+  }
 }
 header .seccion-login {
   display: flex;
@@ -129,6 +160,10 @@ header .seccion-login .contenedor-login input {
 .main .seccion-ultimo-sencillo .contenedor-seccion-ultimo-sencillo {
   display: flex;
   width: 100%;
+}
+.main .seccion-ultimo-sencillo .contenedor-seccion-ultimo-sencillo .img-ultimo-sencillo {
+  width: 100%;
+  object-fit: cover;
 }
 .main .seccion-ultimo-sencillo .contenedor-seccion-ultimo-sencillo .texto-seccion-ultimo-sencillo {
   display: flex;
@@ -166,7 +201,10 @@ header .seccion-login .contenedor-login input {
 }
 .main .section-shop .contenedor-shop {
   position: relative;
-  background: linear-gradient(to left, #aa5f88, white, #aa5f88);
+  background-image: url(https://images.pexels.com/photos/2457278/pexels-photo-2457278.jpeg?auto=compress&cs=tinysrgb&w=1600);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 .main .section-shop .contenedor-shop .flechas {
   display: flex;
@@ -193,6 +231,14 @@ header .seccion-login .contenedor-login input {
   padding: 1em;
   background: rgba(0, 0, 0, 0.5);
 }
+.main .section-shop .contenedor-shop .carrousel .title-shop {
+  color: #fff;
+  font-family: "Shadows Into Light", cursive;
+  width: 33.3333333333%;
+  text-align: center;
+  z-index: 55;
+  font-size: 5.8em;
+}
 .main .section-shop .contenedor-shop .carrousel .contenido {
   display: flex;
   transform: translateX(0%);
@@ -211,6 +257,79 @@ header .seccion-login .contenedor-login input {
 
 .d-none {
   display: none;
+}
+
+.section-discografia .contenedor-discografia {
+  display: flex;
+  width: 100%;
+}
+.section-discografia .contenedor-discografia .cont-img-disc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+}
+.section-discografia .contenedor-discografia .cont-img-disc div {
+  display: inline-block;
+  text-align: center;
+  line-height: 37;
+  color: #fff;
+  position: absolute;
+  padding: 31px;
+  width: 100%;
+  height: 100%;
+}
+.section-discografia .contenedor-discografia .cont-img-disc div:hover {
+  background: rgba(0, 0, 0, 0.35);
+  transition: all 1s;
+  width: 100%;
+}
+.section-discografia .contenedor-discografia .cont-img-disc div i {
+  background-color: rgb(241, 118, 241);
+  padding: 19px;
+  border-radius: 25px;
+}
+.section-discografia .contenedor-discografia .cont-img-disc div i:hover {
+  background-color: rgba(241, 118, 241, 0.315);
+}
+.section-discografia .contenedor-discografia .cont-img-disc .img-disc {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+.section-discografia .contenedor-discografia .cont-img-disc .img-disc:hover {
+  background: black;
+}
+
+.footer {
+  background: linear-gradient(to left, #141414, #000000, #1f1f1f);
+  height: 95px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.footer .section-footer .contenedor-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  color: #fff;
+  font-size: 1.3em;
+  font-family: monospace;
+}
+.footer .section-footer .contenedor-footer .ul-footer {
+  display: flex;
+  gap: 3px;
+}
+.footer .section-footer .contenedor-footer .ul-footer li {
+  list-style: none;
+}
+.footer .section-footer .contenedor-footer .ul-footer li a {
+  text-decoration: none;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */
