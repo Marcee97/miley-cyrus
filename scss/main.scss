@@ -11,16 +11,22 @@ header {
   @media (max-width: 910px) {
     height: 69vh;
   }
+  
 
   .img-portada {
     width: 100%;
-    height: 100vh;
+    
     position: absolute;
     object-fit: cover;
-    object-position: top;
+    
+    
     z-index: -2;
-    @media (max-width: 910px) {
-      margin-top: -7em;
+   
+    @media(max-width:400px){
+      height: max-content;
+      
+     
+
     }
   }
   nav {
@@ -30,24 +36,51 @@ header {
     background: rgba($color: #000000, $alpha: 0.8);
     font-family: sans-serif;
     cursor: pointer;
-    position: fixed;
+
+    .nav-icono-menu{
+      display: none;
+      @media(max-width:400px){
+        display: flex;
+        width: 100%;
+        justify-content: end;
+        padding: .6em;
+        a{
+          color: #fff;
+          font-size: 1.8em;
+        }
+      
+    }
+    }
+   
+    
   }
   ul {
     display: flex;
     list-style: none;
     font-size: 1.2em;
     padding: 0.6em;
+    @media(max-width:400px){
+      padding: 0.4em;
+    }
+    
+    
     li {
       margin: 8px;
       font-size: 1.6em;
       @media (max-width: 495px) {
         font-size: 1.2em;
       }
+       @media(max-width:400px){
+        display: none;
+      }
+     
 
       a {
         text-decoration: none;
-
         color: #ffffff;
+         @media(max-width:400px){
+        display: none;
+      }
       }
     }
   }
@@ -60,6 +93,7 @@ header {
     display: flex;
     align-items: end;
     justify-content: end;
+    
 
     @media (max-width: 1506px) {
       width: 47%;
@@ -78,8 +112,11 @@ header {
       width: 62%;
     }
     @media (max-width: 495px) {
-      width: 54%;
+      width: 50%;
     }
+     @media(max-width:350px){
+      width: 34%;
+     }
   }
   .cuadro-unplugged {
     background-color: #000000;
@@ -92,6 +129,7 @@ header {
     font-size: 1.7em;
     position: absolute;
     padding: 1.3em;
+    
     @media (max-width: 1156px) {
       width: 430px;
       height: 430px;
@@ -109,13 +147,23 @@ header {
       height: 340px;
     }
     @media (max-width: 760px) {
-      width: 310px;
-      height: 310px;
+      width: 250px;
+      height: 250px;
       font-size: 1.1em;
     }
     @media (max-width: 495px) {
-      width: 250px;
+      width: 200px;
       height: 200px;
+    }
+    @media(max-width:400px){
+      width: 150px;
+      height: 150px;
+    }
+    @media(max-width:350px){
+      width: 100px;
+      height: 150px;
+      padding: .5em;
+      text-align: center;
     }
 
     img {
@@ -130,7 +178,13 @@ header {
       z-index: 2;
       font-family: "Shadows Into Light", cursive;
       @media (max-width: 495px) {
-        font-size: 2.5em;
+        font-size: 2.1em;
+      }
+      @media(max-width:400px){
+        font-size: 1.9em;
+      }
+      @media(max-width:350px){
+        font-size: 1.1em;
       }
     }
     hr {
@@ -159,8 +213,14 @@ header {
       border: none;
       background-color: #ffffff;
       @media (max-width: 1156px) {
-        font-size: 85%;
+        font-size: 75%;
       }
+      @media(max-width:400px){
+        font-size: 65%;
+      }
+       @media(max-width:350px){
+        font-size: 40%;
+       }
     }
     img {
       height: 150px;
@@ -172,6 +232,8 @@ header {
     width: 100%;
     justify-content: end;
     color: #000000;
+    
+    position: absolute;
 
     .contenedor-login {
       display: flex;
@@ -185,9 +247,12 @@ header {
       padding: 0.5em;
       transform: translateX(100%);
       transition: 1s all ease;
-
       @media (max-width: 668px) {
         width: 40%;
+      }
+      @media(max-width:400px){
+        width: 60%;
+        
       }
       button {
         border: none;
