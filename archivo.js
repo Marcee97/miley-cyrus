@@ -1,17 +1,45 @@
 const imgPortada            = document.querySelector(".img-portada");
 const cuadroUnplugged       = document.querySelector(".cuadro-unplugged");
-const botonIzquierda        = document.querySelector(".btn-carrousel-izquierda");
-const botonDerecha          = document.querySelector(".btn-carrousel-derecha");
-const contenidoCarrousel    = document.querySelector(".contenido");
-const imagenesCarrousel     = document.querySelectorAll(".items");
-
 const btnLogin              = document.querySelector('.btn-login');
 const iconoMenu             = document.querySelector('.icono-menu');
 const menuDesplegable       = document.querySelector('.menu-desplegable');
 const nav                   = document.querySelector('.nav');
 const iconoLogin            = document.querySelector('.icono-login');
-const formDesplegable      = document.querySelector('.form-desplegable');
-const loginResponsive       = document.querySelectorAll('.login-responsive')
+const formDesplegable       = document.querySelector('.form-desplegable');
+const loginResponsive       = document.querySelectorAll('.login-responsive');
+
+const botonIzquierda        = document.querySelector('.boton-izquierda');
+const botonDerecha          = document.querySelector('.boton-derecha');
+const contenido             = document.querySelector('.contenido');
+
+
+
+let contador = 0
+
+function moverDerecha() {
+  if (contador >= contenido.childElementCount) {
+    contador = 0;
+  }
+  contenido.style.transform = `translateX(${contador * -33}%)`;
+  contador++;
+}
+
+function moverIzquierda() {
+  contador--
+  if (contador < 0) {
+    contador = 2;
+  }
+  contenido.style.transform = `translateX(${contador * -33.3}%)`;
+}
+
+botonDerecha.addEventListener("click", moverDerecha);
+botonIzquierda.addEventListener("click", moverIzquierda);
+
+
+
+
+
+
 
 window.addEventListener("scroll", () => {
   let scroll = window.scrollY;
@@ -19,9 +47,7 @@ window.addEventListener("scroll", () => {
   cuadroUnplugged.style.right = scroll * 1.2 + "px";
 });
 
-
 let contadorLogin = 0
-
 
 const loginResponsiv = (e)=>{
   if(contadorLogin === 0){
