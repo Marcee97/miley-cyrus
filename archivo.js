@@ -20,7 +20,7 @@ function moverDerecha() {
   if (contador >= contenido.childElementCount) {
     contador = 0;
   }
-  contenido.style.transform = `translateX(${contador * -33}%)`;
+  contenido.style.transform = `translateX(${contador * -33.3}%)`;
   contador++;
 }
 
