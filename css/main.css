@@ -311,7 +311,7 @@ header .cuadro-unplugged button {
   transition: 0.5s all;
 }
 .main .carrousel .contenedor-carrousel .contenido .img-carrousel {
-  width: 20%;
+  width: 25%;
   object-fit: cover;
 }
 
