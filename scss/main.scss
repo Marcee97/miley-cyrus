@@ -297,7 +297,7 @@ header {
       width: 100%;
       overflow: hidden;
       position: relative;
-      max-width: 80em;
+     
       
       .contenedor-flechas{
         display: flex;
@@ -319,10 +319,10 @@ header {
         justify-content: space-around;
         flex-flow: row nowrap;
         align-items: center;
-        transition: 1s all;
+        transition: .5s all;
         
         .img-carrousel{
-          width: calc(150% / 2 - 2em);
+          width: calc(100% / 2);
           object-fit: cover;
         }
       }

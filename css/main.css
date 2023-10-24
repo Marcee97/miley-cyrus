@@ -289,7 +289,6 @@ header .cuadro-unplugged button {
   width: 100%;
   overflow: hidden;
   position: relative;
-  max-width: 80em;
 }
 .main .carrousel .contenedor-carrousel .contenedor-flechas {
   display: flex;
@@ -309,10 +308,10 @@ header .cuadro-unplugged button {
   justify-content: space-around;
   flex-flow: row nowrap;
   align-items: center;
-  transition: 1s all;
+  transition: 0.5s all;
 }
 .main .carrousel .contenedor-carrousel .contenido .img-carrousel {
-  width: calc(75% - 2em);
+  width: 50%;
   object-fit: cover;
 }
 
